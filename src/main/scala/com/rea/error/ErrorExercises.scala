@@ -65,7 +65,7 @@ object ErrorExercises {
     *  def map[B](g: A => B): ErrorOr[B]
     */
 
-  def findAgentAnswer(agentId: AgentId) : ErrorOr[String] = findAgent(agentId).map({ agent => s"agent ${agent.name} not found"})
+  def findAgentAnswer(agentId: AgentId) : ErrorOr[String] = findAgent(agentId).map({ agent => s"The agent is ${agent.name}"})
 
   /**
     * Exercise 3:
