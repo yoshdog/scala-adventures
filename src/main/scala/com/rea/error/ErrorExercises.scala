@@ -51,7 +51,7 @@ object ErrorExercises {
 
   def findAgent(agentId: AgentId): ErrorOr[Agent] =
     agents.get(agentId) match {
-      case None => Left(AppError(s"Cannot find agent with id ${agentId}"))
+      case None => Left(AppError(s"agent ${agentId} not found"))
       case Some(agent) => Right(agent)
     }
 
