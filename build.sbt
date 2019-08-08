@@ -10,7 +10,7 @@ resolvers ++= Seq(
   "gphat" at "https://raw.github.com/gphat/mvn-repo/master/releases/")
 
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.8"
 sbtVersion := "0.13.13"
 
 
